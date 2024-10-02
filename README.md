@@ -42,10 +42,10 @@ You should now have a file _data/how-many-lives.txt_ that reads _9_. Luacfg!
         <dt>luacfg.Initialized</dt>
         <dd>Ready for creation of commands</dd>
         <dt>luacfg.LoadFiles</dt>
-        <dd>Files were read from a directory</dd>
+        <dd>Files were loaded from a directory</dd>
         <dd>dir (string)</dd>
         <dt>luacfg.LoadFile</dt>
-        <dd>A file was read</dd>
+        <dd>A file was loaded</dd>
         <dd>file (string)</dd>
    </dl>
 </ul>
