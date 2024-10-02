@@ -10,7 +10,7 @@ While Source's cfg is not that different, it's bound by ugly Source limitations 
 
 ## How it works
 
-Devs define luacfg commands in their lua code, luacfg recursively parses files in cfg/luacfg/, Admins write to luacfg/
+Devs define luacfg commands in their lua code, luacfg recursively parses files in cfg/luacfg/, Admins write to cfg/luacfg/
 
 ## Create a luacfg command
 
