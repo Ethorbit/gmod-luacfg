@@ -17,7 +17,7 @@ Devs define luacfg commands in their lua code, luacfg recursively parses files i
 Developer, inside your lua:
 
 ```lua
-hook.Add("luacfg.Initialized", "put_a_unique_value_here", function(args)
+hook.Add("luacfg.Initialized", "put_a_unique_value_here", function()
     luacfg.AddCommand("cat_lives", function(args)
         local lives = args[1]
         if !lives then return end
