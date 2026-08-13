@@ -51,7 +51,6 @@ luacfg.CommentSymbols = {
 }
 
 -- Now we need to make our own command interpreter
--- I hate my life.
 luacfg.ParseCommand = function(line)
     local command = ""
     local args = {}
