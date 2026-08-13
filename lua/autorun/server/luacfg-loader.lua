@@ -204,7 +204,10 @@ hook.Add("luacfg.LoadFile", "luacfg.LoadFileListener", function(file)
     luacfg.LoadFile(file)
 end)
 
-hook.Add("InitPostEntity", "luacfg.InitPost", function()
+hook.Add("PostGamemodeLoaded", "luacfg.Initialize", function()
     hook.Run("luacfg.Initialized")
+end)
+
+hook.Add("InitPostEntity", "luacfg.InitPost", function()
     luacfg.LoadFiles()
 end)
