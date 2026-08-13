@@ -204,11 +204,7 @@ hook.Add("luacfg.LoadFile", "luacfg.LoadFileListener", function(file)
     luacfg.LoadFile(file)
 end)
 
-hook.Run("luacfg.Initialized")
-timer.Create("luacfg.IHateGarrysMod", 0.1, 10, function()
+hook.Add("InitPostEntity", "luacfg.InitPost", function()
     hook.Run("luacfg.Initialized")
-end)
-
-hook.Add("InitPostEntity", function()
     luacfg.LoadFiles()
 end)
